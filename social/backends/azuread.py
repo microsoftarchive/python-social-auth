@@ -35,7 +35,6 @@ class AzureADOAuth2(BaseOAuth2):
         """Return extra arguments needed on auth process. The defaults can be
         overriden by GET parameters."""
         extra_arguments = {
-            'resource': self.setting('SHAREPOINT_SITE')
         }
         return extra_arguments
 
